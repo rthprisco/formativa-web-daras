@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daras Auto Service</title>
     <link rel="shortcut icon" href="images/logo-daras-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -153,9 +156,22 @@
         footer {
             display: flex;
             align-items: center;
+            justify-content: space-around;
             background-color: var(--primary-yellow);
-            min-height: 80px;
+            color: var(--text);
+            min-height: 120px;
             margin-top: 40px;
+        }
+
+        footer .redes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        footer .redes a i {
+            font-size: 20px;
+            color: var(--text);
         }
     </style>
 </head>
@@ -167,7 +183,7 @@
             <nav>
                 <a href="#">Início</a>
                 <a href="#">Serviços</a>
-                <a href="https://www.instagram.com/darasautoservice/" target="_blank">Contato</a>
+                <a href="#">Contato</a>
                 <a href="#">Sobre</a>
             </nav>
         </div>
@@ -195,13 +211,18 @@
                 <img src="images/oleo.jpg" alt="Imagem do Artigo 2">
                 <div class="article-content">
                     <h2>Artigo 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et urna at libero volutpat aliquam.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat
-                        volutpat. Nulla facilisi. Duis et accumsan nulla. Cras auctor urna ac magna ultricies, sed lacinia
-                        velit accumsan. Curabitur sagittis, nulla sit amet commodo congue, sem turpis vehicula ligula, vel
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et urna at libero volutpat
+                        aliquam.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+                        erat
+                        volutpat. Nulla facilisi. Duis et accumsan nulla. Cras auctor urna ac magna ultricies, sed
+                        lacinia
+                        velit accumsan. Curabitur sagittis, nulla sit amet commodo congue, sem turpis vehicula ligula,
+                        vel
                         luctus ipsum ligula at risus. Mauris consectetur fermentum odio vel porttitor. Mauris in turpis
                         libero. Morbi nec mauris id risus vehicula vehicula nec a libero. Integer condimentum tristique
-                        consectetur. Vestibulum vel tortor nec arcu viverra eleifend non at ligula. In vehicula, nisl nec
+                        consectetur. Vestibulum vel tortor nec arcu viverra eleifend non at ligula. In vehicula, nisl
+                        nec
                         molestie dictum, ex nisl sollicitudin felis, sed posuere enim risus id ligula.</p>
                 </div>
             </article>
@@ -209,13 +230,18 @@
                 <img src="images/oleo.jpg" alt="Imagem do Artigo 3">
                 <div class="article-content">
                     <h2>Artigo 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et urna at libero volutpat aliquam.
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat
-                        volutpat. Nulla facilisi. Duis et accumsan nulla. Cras auctor urna ac magna ultricies, sed lacinia
-                        velit accumsan. Curabitur sagittis, nulla sit amet commodo congue, sem turpis vehicula ligula, vel
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et urna at libero volutpat
+                        aliquam.
+                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam
+                        erat
+                        volutpat. Nulla facilisi. Duis et accumsan nulla. Cras auctor urna ac magna ultricies, sed
+                        lacinia
+                        velit accumsan. Curabitur sagittis, nulla sit amet commodo congue, sem turpis vehicula ligula,
+                        vel
                         luctus ipsum ligula at risus. Mauris consectetur fermentum odio vel porttitor. Mauris in turpis
                         libero. Morbi nec mauris id risus vehicula vehicula nec a libero. Integer condimentum tristique
-                        consectetur. Vestibulum vel tortor nec arcu viverra eleifend non at ligula. In vehicula, nisl nec
+                        consectetur. Vestibulum vel tortor nec arcu viverra eleifend non at ligula. In vehicula, nisl
+                        nec
                         molestie dictum, ex nisl sollicitudin felis, sed posuere enim risus id ligula.</p>
                 </div>
             </article>
@@ -234,6 +260,17 @@
     </div>
     <footer>
         <p>© 2024 Daras Auto Service</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/darasautoservice/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
     </footer>
 </body>
 
