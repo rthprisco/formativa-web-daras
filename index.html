@@ -18,6 +18,7 @@
             --primary-black: #171717;
             --primary-yellow: #fec301;
             --shadow-gray: #3e3e3e;
+            --white: #fff;
         }
 
         * {
@@ -151,12 +152,69 @@
         }
 
         aside {
-            max-width: 240px;
+            max-width: 300px;
             margin: 16px;
             padding: 16px;
             border-radius: 8px;
             color: var(--text);
             background-color: var(--primary-yellow);
+        }
+
+        .sidebar-component {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid var(--background);
+            background: var(--primary-black);
+            margin-bottom: 24px;
+        }
+
+        .sidebar-component h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            background: var(--background);
+            color: var(--primary-yellow);
+        }
+
+        .sidebar-component a {
+            font-size: 15px;
+            color: var(--white);
+            text-decoration: none;
+            padding: 8px 8px;
+            line-height: 1.4;
+        }
+
+        .sidebar-component a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar-component .noticia a {
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar-component .noticia a p {
+            margin-left: 8px; 
+        }
+
+        .sidebar-component .noticia img {
+            width: 100px;
+            height: 66px;
+        }
+
+        .sidebar-component .comparacao {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .sidebar-component.comparativo p {
+            text-align: center;
+            margin-top: 4px;
+        }
+
+        .sidebar-component .comparacao img {
+            width: 120px;
+            height: 80px;
         }
 
         footer {
@@ -167,7 +225,6 @@
             color: var(--text);
             min-height: 120px;
             margin-top: 40px;
-            box-shadow: 0 0 8px var(--shadow-gray);
         }
 
         footer .redes {
@@ -204,7 +261,7 @@
     <div class="container">
         <section>
             <article>
-                <img src="images/alinhamento-balenceamento.jpg" alt="Imagem do Artigo 1" width="180">
+                <img src="images/artigos/alinhamento-balenceamento.jpg" alt="Imagem do Artigo 1" width="180">
                 <div class="article-content">
                     <h2>Alinhamento e Balanceamento</h2>
                     <p>O alinhamento das rodas significa ajustar o ângulo delas para deixá-las alinhadas com o volante.
@@ -215,7 +272,7 @@
                 </div>
             </article>
             <article>
-                <img src="images/oleo.jpg" alt="Imagem do Artigo 2">
+                <img src="images/artigos/oleo.jpg" alt="Imagem do Artigo 2">
                 <div class="article-content">
                     <h2>Óleo e Filtro de óleo</h2>
                     <p>
@@ -230,7 +287,7 @@
                 </div>
             </article>
             <article>
-                <img src="images/freio.jpg" alt="Imagem do Artigo 3">
+                <img src="images/artigos/freio.jpg" alt="Imagem do Artigo 3">
                 <div class="article-content">
                     <h2>Freios</h2>
                     <p>
@@ -246,15 +303,66 @@
             </article>
         </section>
         <aside>
-            <h2>Sidebar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et urna at libero volutpat aliquam.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat
-                volutpat. Nulla facilisi. Duis et accumsan nulla. Cras auctor urna ac magna ultricies, sed lacinia velit
-                accumsan. Curabitur sagittis, nulla sit amet commodo congue, sem turpis vehicula ligula, vel luctus
-                ipsum ligula at risus. Mauris consectetur fermentum odio vel porttitor. Mauris in turpis libero. Morbi
-                nec mauris id risus vehicula vehicula nec a libero. Integer condimentum tristique consectetur.
-                Vestibulum vel tortor nec arcu viverra eleifend non at ligula. In vehicula, nisl nec molestie dictum, ex
-                nisl sollicitudin felis, sed posuere enim risus id ligula.</p>
+            <div class="sidebar-component">
+                <h2>Confira também</h2>
+                <a href="#">Como economizar combustível</a>
+                <a href="#">Os melhores acessórios automotivos de 2024</a>
+                <a href="#">Cuidados essenciais com os pneus</a>
+                <a href="#">Como cuidar da pintura do seu carro</a>
+                <a href="#">Guia de manutenção de veículos elétricos</a>
+                <a href="#">Dicas para dirigir com segurança</a>
+            </div>
+            <div class="sidebar-component">
+                <h2>Últimas notícias</h2>
+                <div class="noticia">
+                    <a href="" target="_blank">
+                        <img src="images/noticias/BMW_M3CS_07.jpg" alt="BMW M3 CS">
+                        <p>BMW M3 CS chega ao Brasil mais potente e em tiragem limitada</p>
+                    </a>
+                </div>
+                <div class="noticia">
+                    <a href="https://www.carrosnaweb.com.br/noticias.asp?codnoticia=2712" target="_blank">
+                        <img src="images/noticias/Versa-SR-2025-20.jpg" alt="Nissan Versa">
+                        <p>Linha 2025 do Nissan Versa ganha nova versão SR por R$ 123.900,00</p>
+                    </a>
+                </div>
+                <div class="noticia">
+                    <a href="https://www.carrosnaweb.com.br/noticias.asp?codnoticia=2715" target="_blank">
+                        <img src="images/noticias/Polo-Rock-in-Rio-2025-20.jpg" alt="Volkswagen Polo">
+                        <p>Volkswagen Polo ganha série Rock in Rio baseada na versão Track</p>
+                    </a>
+                </div>
+                <div class="noticia">
+                    <a href="https://www.noticiasautomotivas.com.br/porsche-911-se-rende-a-hibridizacao-com-versao-gts-t-hybrid/" target="_blank">
+                        <img src="images/noticias/porsche-911.jpg" alt="Porsche 911">
+                        <p>Porsche 911 se rende à hibridização com versão GTS T-Hybrid</p>
+                    </a>
+                </div>
+            </div>
+            <div class="sidebar-component comparativo">
+                <h2>Comparativos</h2>
+                <a href="">
+                    <div class="comparacao">
+                        <img src="images/comparativos/fiat-mobi.jpg" alt="Fiat Mobi">
+                        <img src="images/comparativos/renault-kwid.jpg" alt="Renault Kwid">
+                    </div>
+                    <p>Fiat Mobi vs. Renault Kwid</p>
+                </a>
+                <a href="">
+                    <div class="comparacao">
+                        <img src="images/comparativos/toyota-corolla.jpeg" alt="Toyota Corolla">
+                        <img src="images/comparativos/honda-civic.jpg" alt="Honda Civic">
+                    </div>
+                    <p>Toyota Corolla vs. Honda Civic</p>
+                </a>
+                <a href="">
+                    <div class="comparacao">
+                        <img src="images/comparativos/ferrari-f8.jpeg" alt="Ferrari F8" height="80" width="120">
+                        <img src="images/comparativos/chevette-sl.jpg" alt="Chevrolet Chevette" height="80" width="120">
+                    </div>
+                    <p>Ferrari F8 vs. Chevrolet Chevette</p>
+                </a>
+            </div>
         </aside>
     </div>
     <footer>
